@@ -6,6 +6,8 @@ Wood and Lava Textures are original. <br>
 <br>
 Flowchart made using Google Drawing. <br>
 <br>
+Toggles: 1,2 for Lava, F for Bloom. <br>
+<br>
 Scene Setup:<br>
 Since I was an even number, I was tasked to recreate the office-esque scene. In doing so I created a player object and enemy object. I then added three walls and a floor to capture the 2D-style. I also manipulated the position of the camera to achieve this. Along the bottom of the scene I added the fire/lava. I also added 2 desk objects with lamp lights to add more to the background of the scene. The player and enemy objects can be seen rotating during the scene. <br>
 <br>
