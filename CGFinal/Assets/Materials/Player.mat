@@ -87,7 +87,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _mySlider: 1.43
+    - _mySlider: 1.08
     m_Colors:
     - _Color: {r: 0.044817813, g: 0.5377358, b: 0, a: 1}
     - _Colour: {r: 0, g: 1, b: 0.15733409, a: 1}

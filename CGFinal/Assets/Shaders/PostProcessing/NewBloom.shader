@@ -2,6 +2,7 @@ Shader "Custom/NewBloom"
 {
 	Properties{
 		 _MainTex("Texture", 2D) = "white" {}
+		 _Colour("Colour", Color) = (1,1,1,1)
 	}
 
 		CGINCLUDE
@@ -13,6 +14,8 @@ Shader "Custom/NewBloom"
 	half4 _Filter;
 
 	half _Intensity;
+
+	float4 _Colour;
 
 	struct VertexData {
 		float4 vertex : POSITION;
@@ -103,7 +106,7 @@ Shader "Custom/NewBloom"
 					#pragma fragment FragmentProgram
 
 					half4 FragmentProgram(Interpolators i) : SV_Target {
-						half4 c = tex2D(_SourceTex, i.uv);
+						half4 c = tex2D(_SourceTex, i.uv)  * _Colour;
 						c.rgb += _Intensity * SampleBox(i.uv, 0.5);
 						return c;
 					}

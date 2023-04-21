@@ -30,6 +30,8 @@ public class NewBloom : MonoBehaviour
 
 	public bool debug;
 
+	public Color colour;
+
 	// store render textures
 	RenderTexture[] textures = new RenderTexture[16];
 
@@ -54,6 +56,7 @@ public class NewBloom : MonoBehaviour
 		//set values to shader values
 		bloom.SetVector("_Filter", filter);
 		bloom.SetFloat("_Intensity", Mathf.GammaToLinearSpace(intensity));
+		bloom.SetColor("_Colour", colour);
 
 		int width = source.width / 2;
 		int height = source.height / 2;
