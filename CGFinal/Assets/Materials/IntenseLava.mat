@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wave
+  m_Name: IntenseLava
   m_Shader: {fileID: 4800000, guid: 70fdb620377971a47b18dfb6dcc5b054, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -45,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b2fca6b82bf5cfb48af6c16b5f27f416, type: 3}
+        m_Texture: {fileID: 2800000, guid: c2a7e1b2de0b7ee4bacbcddbd28dc27b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -66,12 +66,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amp: 0.111
+    - _Amp: 0.146
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Freq: 1.05
+    - _Freq: 0.46
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -79,17 +79,17 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ScrollX: -4.42
-    - _ScrollY: 1.27
+    - _ScrollX: 1.59
+    - _ScrollY: 2.2
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 62.5
+    - _Speed: 18.3
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _mySlider: 15
+    - _mySlider: 1.67
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Tint: {r: 1, g: 0, b: 0.10174513, a: 1}
+    - _Tint: {r: 1, g: 0.58746946, b: 0.3537736, a: 1}
   m_BuildTextureStacks: []
