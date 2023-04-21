@@ -35,7 +35,8 @@ Shader "Custom/NewBloom"
 		return tex2D(_MainTex, uv).rgb;
 	}
 
-	half3 SampleBox(float2 uv, float delta) {
+	half3 SampleBox(float2 uv, float delta)
+	{
 		float4 o = _MainTex_TexelSize.xyxy * float2(-delta, delta).xxyy;
 		half3 s =
 			Sample(uv + o.xy) + Sample(uv + o.zy) +
@@ -43,9 +44,10 @@ Shader "Custom/NewBloom"
 		return s * 0.25f;
 	}
 
-	half3 Prefilter(half3 c) {
+	half3 Prefilter(half3 c) // determines brightest parts of image to actually be adjusted
+	{
 		half brightness = max(c.r, max(c.g, c.b));
-		half soft = brightness - _Filter.y;
+		half soft = brightness - _Filter.y; 
 		soft = clamp(soft, 0, _Filter.z);
 		soft = soft * soft * _Filter.w;
 		half contribution = max(soft, brightness - _Filter.x);
