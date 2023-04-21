@@ -6,6 +6,7 @@ Shader "Custom/NormalMapping"
        _myBump("Bump Texture", 2D) = "bump" {}
        _mySlider("Bump Amount", Range(0,15)) = 1
        _Colour("Colour", Color) = (1,1,1,1)
+
     }
         SubShader
        {
