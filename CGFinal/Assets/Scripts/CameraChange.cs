@@ -7,7 +7,6 @@ public class CameraChange : MonoBehaviour
 
     [SerializeField] GameObject camera1;
     [SerializeField] GameObject camera2;
-    [SerializeField] GameObject camera3;
 
 
     // Start is called before the first frame update
@@ -26,7 +25,6 @@ public class CameraChange : MonoBehaviour
             {
                 camera1.gameObject.SetActive(false);
                 camera2.gameObject.SetActive(true);
-                camera3.gameObject.SetActive(false);
             }
         }
         else if (camera2.activeInHierarchy)
@@ -35,15 +33,6 @@ public class CameraChange : MonoBehaviour
             {
                 camera1.gameObject.SetActive(true);
                 camera2.gameObject.SetActive(false);
-            }
-        }
-        else if (camera3.activeInHierarchy)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                camera1.gameObject.SetActive(true);
-                camera2.gameObject.SetActive(false);
-
             }
         }
     }
