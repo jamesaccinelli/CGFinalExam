@@ -4,6 +4,10 @@ Wallpaper, Shell, and Fur textures originate from -> https://3dtextures.me/ <br>
 <br>
 Wood and Lava Textures are original. <br>
 <br>
+Flowchart made using Google Drawing. <br>
+<br>
+Toggles: 1,2 for Lava, F for Bloom. <br>
+<br>
 Scene Setup:<br>
 Since I was an even number, I was tasked to recreate the office-esque scene. In doing so I created a player object and enemy object. I then added three walls and a floor to capture the 2D-style. I also manipulated the position of the camera to achieve this. Along the bottom of the scene I added the fire/lava. I also added 2 desk objects with lamp lights to add more to the background of the scene. The player and enemy objects can be seen rotating during the scene. <br>
 <br>
@@ -20,6 +24,10 @@ This water wave effect is created through making a sine-wave effect. Practically
 Bloom: <br>
 Bloom is the process of blurring an image, applying it onto the original image, and then brightening it. The bloom shader was utilized to add vibrance to certain objects in the scene, mainly the lava. I found that experimenting with the bloom properties allowed for a more fiery lava effect, making it feel more realistic. Additionally, bloom helped enhance the brighter areas in the scene, such as the lamps. I felt that this made the scene more interesting, making it less dull. The bloom shader was built off of the lecture shader. Additionally, I added a colour property to experiment with. This created a colour-grade style effect, allowing me to manipulate the colour of the bloom. This was done by multiplying the sample texture in the 3rd pass by the colour property, and setting a variable equal to the proerty in the accompanying c# script. See above the lava without bloom, and below with bloom. <br>
 ![image](https://user-images.githubusercontent.com/94195667/233706774-b0ae5e73-379a-406c-b199-af933d930f48.png)
+<br>
+Bonus Shader: <br>
+For this bonus shader I utilized Toon Shading along with normal mapping. Toon shading is the process of making a 3D object appear flat, by using a ramp texture to change colours at the extremes rather than a gradual linear transition/gradient. I elected to use this shader on the player object, to make it stand out with the rest of the scene. I also implemented this in hopes of creating a more realistic turtle shell style of effect. For this shader, I built off of the lecture shader, and added normal mapping calculations to it. I think its worth mentioning that the shader does also have rim lighting calculations, but were not utilized as I felt they did not fit in the scene. Below is a flowchart detailing the shader. <br>
+![image](https://user-images.githubusercontent.com/94195667/233708657-2f1e70ae-d760-4223-9e23-a95fe1bb973e.png)
 <br>
 
 
