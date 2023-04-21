@@ -8,8 +8,8 @@ Shader "Custom/ToonRampWTex"
         _myBump("Bump Texture", 2D) = "bump" {}
         _mySlider("Bump Amount", Range(0,10)) = 1
 
-        _RimColor("Rim Color", Color) = (0, 0.5, 0.5, 0.0)
-        _RimPower("Rim Power", Range(0, 8.0)) = 3.0
+       // _RimColor("Rim Color", Color) = (0, 0.5, 0.5, 0.0)
+       // _RimPower("Rim Power", Range(0, 8.0)) = 3.0
     }
         SubShader
         {
@@ -22,8 +22,8 @@ Shader "Custom/ToonRampWTex"
             sampler2D _MainTex;
             sampler2D _myBump;
             half _mySlider;
-            float4 _RimColor;
-            float _RimPower;
+           // float4 _RimColor;
+           // float _RimPower;
 
             float4 LightingToonRamp(SurfaceOutput s, fixed3 lightDir, fixed atten)
             {
@@ -52,9 +52,9 @@ Shader "Custom/ToonRampWTex"
                 o.Normal = UnpackNormal(tex2D(_myBump, IN.uv_myBump)); //rgb to xyz
                 o.Normal *= float3(_mySlider, _mySlider, 1);
                 // half rim = dot (normalize(IN.viewDir), o.Normal);
-                half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
+               // half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
                 //o.Emission = _RimColor.rgb * rim;
-                o.Emission = _RimColor.rgb * pow(rim, _RimPower);
+               // o.Emission = _RimColor.rgb * pow(rim, _RimPower);
             }
                 ENDCG
         }
