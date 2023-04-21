@@ -357,6 +357,7 @@
 "Assets/Scripts/CameraChange.cs"
 "Assets/Scripts/MaterialChange.cs"
 "Assets/Scripts/Orbit.cs"
+"Assets/Shaders/ColourGrade/ColourGrade.cs"
 "Assets/Shaders/PostProcessing/DepthOfField.cs"
 "Assets/Shaders/PostProcessing/NewBloom.cs"
 -langversion:9.0
